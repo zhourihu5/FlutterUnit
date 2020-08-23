@@ -16,11 +16,11 @@
 
 ```
 ---[• flutter --version
-Flutter 1.20.0-3.0.pre.159 • channel master •
-https://github.com/flutter/flutter.git
-Framework • revision 77310c152f (6 hours ago) • 2020-07-07 18:04:02 -0700
-Engine • revision d0d6a4c236
-Tools • Dart 2.9.0 (build 2.9.0-20.0.dev 69aba23371)
+Flutter 1.21.0-10.0.pre.189 • channel master • https://github.com/flutter/flutter.git
+Framework • revision bebd7944d5 (3 days ago) • 2020-08-19 22:36:04 -0400
+Engine • revision 89f506ed62
+Tools • Dart 2.10.0 (build 2.10.0-45.0.dev)
+
 ```
 
 

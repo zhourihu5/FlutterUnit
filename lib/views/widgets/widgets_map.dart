@@ -59,10 +59,32 @@ class WidgetsMap {
         return [
           InputDecoratorDemo(),
         ];
+      case "WidgetInspector":
+        return [
+          WidgetInspectorDemo(),
+        ];
+      case "PageStorage":
+        return [
+          PageStorageDemo(),
+        ];      case "NotificationListener":
+        return [
+          NotificationListenerDemo(),
+          NotificationListenerUpdate()
+        ];
+
       case "Scrollable":
         return [
           ScrollableDemo(),
         ];
+      case "CupertinoSlidingSegmentedControl":
+        return [
+          CupertinoSlidingSegmentedControlDemo(),
+        ];
+      case "WidgetsApp":
+        return [
+          WidgetsAppDemo(),
+        ];
+
       case "EditableText":
         return [
           EditableTextDemo(),
@@ -103,9 +125,29 @@ class WidgetsMap {
         return [
           ToggleButtonsThemeDemo(),
         ];
+      case "PerformanceOverlay":
+        return [
+          PerformanceOverlayDemo(),
+        ];
       case "NavigationToolbar":
         return [
           NavigationToolbarDemo(),
+        ];
+      case "CupertinoDialogAction":
+        return [
+          CupertinoDialogActionDemo(),
+        ];
+      case "ButtonBarTheme":
+        return [
+          ButtonBarThemeDemo(),
+        ];
+      case "RawImage":
+        return [
+          RawImageDemo(),
+        ];
+      case "TooltipTheme":
+        return [
+          TooltipThemeDemo(),
         ];
       case "CupertinoTextField":
         return [
@@ -134,7 +176,7 @@ class WidgetsMap {
         return [
           CustomFadeInImage(),
         ];
-        case "InteractiveViewer":
+      case "InteractiveViewer":
         return [
           InteractiveViewerDemo(),
           InteractiveViewerDemo2(),
@@ -149,7 +191,7 @@ class WidgetsMap {
           CustomVisibility(),
           ReplacementVisibility(),
         ];
-        case "RepaintBoundary":
+      case "RepaintBoundary":
         return [
           RepaintBoundaryDemo(),
           RepaintBoundarySave(),
@@ -429,7 +471,7 @@ class WidgetsMap {
         ];
       case "MaterialApp":
         return [
-          CustomMaterialApp(),
+          MaterialAppDemo(),
         ];
       case "ClipOval":
         return [

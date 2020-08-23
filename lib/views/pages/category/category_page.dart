@@ -115,6 +115,6 @@ class CategoryPage extends StatelessWidget {
   _toDetailPage(BuildContext context, CategoryModel model) {
     BlocProvider.of<CategoryWidgetBloc>(context)
         .add(EventLoadCategoryWidget(model.id));
-    Navigator.pushNamed(context, Router.category_show, arguments: model);
+    Navigator.pushNamed(context, UnitRouter.category_show, arguments: model);
   }
 }

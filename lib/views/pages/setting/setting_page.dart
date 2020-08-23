@@ -23,7 +23,7 @@ class SettingPage extends StatelessWidget {
             ),
             title: Text('主题色设置'),
             trailing: _nextIcon(context),
-            onTap: () => Navigator.of(context).pushNamed(Router.theme_color_setting),
+            onTap: () => Navigator.of(context).pushNamed(UnitRouter.theme_color_setting),
           ),
           Divider(),
           ListTile(
@@ -33,7 +33,7 @@ class SettingPage extends StatelessWidget {
             ),
             title: Text('字体设置'),
             trailing: _nextIcon(context),
-            onTap: () => Navigator.of(context).pushNamed(Router.font_setting),
+            onTap: () => Navigator.of(context).pushNamed(UnitRouter.font_setting),
           ),
           Divider(),
           ListTile(
@@ -43,7 +43,7 @@ class SettingPage extends StatelessWidget {
             ),
             title: Text('item样式设置'),
             trailing: _nextIcon(context),
-            onTap: () => Navigator.of(context).pushNamed(Router.item_style_setting),
+            onTap: () => Navigator.of(context).pushNamed(UnitRouter.item_style_setting),
           ),
           Divider(),
           ListTile(
@@ -53,7 +53,7 @@ class SettingPage extends StatelessWidget {
             ),
             title: Text('代码高亮样式'),
             trailing: _nextIcon(context),
-            onTap: () => Navigator.of(context).pushNamed(Router.code_style_setting),
+            onTap: () => Navigator.of(context).pushNamed(UnitRouter.code_style_setting),
           ),
           Divider(),
           _buildShowBg(context),

@@ -34,7 +34,7 @@ class HomeDrawer extends StatelessWidget {
               trailing: _nextIcon(context),
               title: Text('我的主题'),
               onTap: () {
-                Navigator.of(context).pushNamed(Router.setting);
+                Navigator.of(context).pushNamed(UnitRouter.setting);
               },
             ),
 
@@ -70,7 +70,7 @@ class HomeDrawer extends StatelessWidget {
               ),
               title: Text('关于应用'),
               trailing: _nextIcon(context),
-              onTap: () => Navigator.of(context).pushNamed(Router.about_app),
+              onTap: () => Navigator.of(context).pushNamed(UnitRouter.about_app),
             ),
             ListTile(
               leading: Icon(
@@ -79,7 +79,7 @@ class HomeDrawer extends StatelessWidget {
               ),
               title: Text('联系本王'),
               trailing: _nextIcon(context),
-              onTap: () => Navigator.of(context).pushNamed(Router.about_me),
+              onTap: () => Navigator.of(context).pushNamed(UnitRouter.about_me),
             ),
           ],
         ),
@@ -101,7 +101,7 @@ class HomeDrawer extends StatelessWidget {
             title: Text('属性集录'),
             trailing: _nextIcon(context),
             onTap: () {
-              Navigator.of(context).pushNamed(Router.attr);
+              Navigator.of(context).pushNamed(UnitRouter.attr);
             },
           ),
           ListTile(
@@ -111,7 +111,7 @@ class HomeDrawer extends StatelessWidget {
             ),
             title: Text('绘画集录'),
             trailing: _nextIcon(context),
-            onTap: () => Navigator.of(context).pushNamed(Router.paint),
+            onTap: () => Navigator.of(context).pushNamed(UnitRouter.paint),
           ),
           ListTile(
             leading: Icon(
@@ -121,7 +121,7 @@ class HomeDrawer extends StatelessWidget {
             title: Text('布局集录'),
             trailing: _nextIcon(context),
             onTap: () {
-              Navigator.of(context).pushNamed(Router.layout);
+              Navigator.of(context).pushNamed(UnitRouter.layout);
             },
           ),
           ListTile(
@@ -132,7 +132,7 @@ class HomeDrawer extends StatelessWidget {
             trailing: _nextIcon(context),
             title: Text('bug/feature 集录'),
             onTap: () {
-              Navigator.of(context).pushNamed(Router.bug);
+              Navigator.of(context).pushNamed(UnitRouter.bug);
             },
           ),
         ],

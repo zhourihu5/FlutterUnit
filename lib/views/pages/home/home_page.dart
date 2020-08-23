@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_unit_mac/app/convert.dart';
 import 'package:flutter_unit_mac/app/res/cons.dart';
@@ -34,24 +35,28 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var selectIndex = 0;
     var color = BlocProvider.of<HomeBloc>(context).state.homeColor;
-    return Scaffold(
-      appBar: TolyAppBar(
-        selectIndex: Cons.tabColors.indexOf(color.value),
-        preferredSize: Size.fromHeight(_height),
-        onItemClick: _switchTab,
-      ),
-      body: Stack(
-        children: <Widget>[
-          BlocBuilder<GlobalBloc, GlobalState>(builder: (_, state) {
-            if (state.showBackGround) {
-              return Background();
-            }
-            return Container();
-          }),
-          BlocBuilder<HomeBloc, HomeState>(builder: _buildContent)
-        ],
-      ),
+    if(color !=null){
+      selectIndex = Cons.tabColors.indexOf(color.value);
+    }
+    return  Scaffold(
+            appBar: TolyAppBar(
+              selectIndex: selectIndex,
+              preferredSize: Size.fromHeight(_height),
+              onItemClick: _switchTab,
+            ),
+            body: Stack(
+              children: <Widget>[
+                BlocBuilder<GlobalBloc, GlobalState>(builder: (_, state) {
+                  if (state.showBackGround) {
+                    return Background();
+                  }
+                  return Container();
+                }),
+                BlocBuilder<HomeBloc, HomeState>(builder: _buildContent)
+              ],
+            ),
     );
   }
 
@@ -112,6 +117,6 @@ class _HomePageState extends State<HomePage> {
 
   _toDetailPage(WidgetModel model) async {
     BlocProvider.of<DetailBloc>(context).add(FetchWidgetDetail(model));
-    Navigator.pushNamed(context, Router.widget_detail, arguments: model);
+    Navigator.pushNamed(context, UnitRouter.widget_detail, arguments: model);
   }
 }
