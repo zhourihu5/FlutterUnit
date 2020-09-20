@@ -59,7 +59,7 @@ class CollectPage extends StatelessWidget {
       leading: Container(
           margin: EdgeInsets.all(10),
           child: CircleImage(
-            image: AssetImage('assets/images/icon_head.png'),
+            image: AssetImage('assets/images/icon_head.webp'),
             borderSize: 1.5,
           )),
       backgroundColor: BlocProvider.of<HomeBloc>(context).state.homeColor,
@@ -77,7 +77,7 @@ class CollectPage extends StatelessWidget {
       flexibleSpace: FlexibleSpaceBar(
         collapseMode: CollapseMode.parallax, //视差效果
         background: Image.asset(
-          "assets/images/caver.jpeg",
+          "assets/images/caver.webp",
           fit: BoxFit.cover,
         ),
       ),

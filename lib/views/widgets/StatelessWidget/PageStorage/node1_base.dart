@@ -24,7 +24,7 @@ class _PageStorageDemoState extends State<PageStorageDemo> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 300,
+      height: 200,
       child: Scaffold(
         body: PageStorage(
           child: _buildContentByIndex(),

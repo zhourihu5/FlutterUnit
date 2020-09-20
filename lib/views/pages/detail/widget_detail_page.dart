@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_star/flutter_star.dart';
 import 'package:flutter_unit_mac/app/res/cons.dart';
 import 'package:flutter_unit_mac/app/router.dart';
-import 'package:flutter_unit_mac/app/style/TolyIcon.dart';
+import 'package:flutter_unit_mac/app/res/toly_icon.dart';
 import 'package:flutter_unit_mac/app/utils/Toast.dart';
 import 'package:flutter_unit_mac/blocs/collect/collect_bloc.dart';
 import 'package:flutter_unit_mac/blocs/collect/collect_event.dart';
@@ -289,7 +289,7 @@ class WidgetDetailTitle extends StatelessWidget {
                   child: ClipRRect(
                       borderRadius: BorderRadius.all(Radius.circular(8)),
                       child: model.image == null
-                          ? Image.asset('assets/images/caver.jpeg')
+                          ? Image.asset('assets/images/caver.webp')
                           : Image(image: model.image))),
             ),
           ),

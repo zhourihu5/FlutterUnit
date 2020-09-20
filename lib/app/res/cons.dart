@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_unit_mac/app/style/TolyIcon.dart';
+import 'package:flutter_unit_mac/app/res/toly_icon.dart';
 import 'package:flutter_unit_mac/components/permanent/code/highlighter_style.dart';
 
 class Cons {

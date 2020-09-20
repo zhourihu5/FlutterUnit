@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_star/flutter_star.dart';
 import 'package:flutter_unit_mac/app/res/cons.dart';
-import 'package:flutter_unit_mac/app/style/shape/techno_shape.dart';
+import 'package:flutter_unit_mac/app/res/style/shape/techno_shape.dart';
 import 'package:flutter_unit_mac/components/permanent/circle_image.dart';
 import 'package:flutter_unit_mac/components/permanent/circle_text.dart';
 import 'package:flutter_unit_mac/components/permanent/feedback_widget.dart';

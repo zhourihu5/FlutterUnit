@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_star/flutter_star.dart';
 import 'package:flutter_unit_mac/app/res/cons.dart';
-import 'package:flutter_unit_mac/app/style/shape/coupon_shape_border.dart';
+import 'package:flutter_unit_mac/app/res/style/shape/coupon_shape_border.dart';
 import 'package:flutter_unit_mac/blocs/collect/collect_bloc.dart';
 import 'package:flutter_unit_mac/blocs/collect/collect_state.dart';
 import 'package:flutter_unit_mac/components/permanent/circle_image.dart';

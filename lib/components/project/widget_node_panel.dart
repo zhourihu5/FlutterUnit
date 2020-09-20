@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:flutter_unit_mac/app/style/TolyIcon.dart';
+import 'package:flutter_unit_mac/app/res/toly_icon.dart';
 import 'package:flutter_unit_mac/app/utils/Toast.dart';
 
 import 'package:flutter_unit_mac/components/permanent/circle.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_unit_mac/app/router.dart';
-import 'package:flutter_unit_mac/app/style/TolyIcon.dart';
+import 'package:flutter_unit_mac/app/res/toly_icon.dart';
 import 'package:flutter_unit_mac/components/flutter/no_div_expansion_tile.dart';
 import 'package:flutter_unit_mac/views/common/unit_drawer_header.dart';
 
