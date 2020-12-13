@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_unit_mac/components/permanent/circle_text.dart';
-import 'package:flutter_unit_mac/components/permanent/feedback_widget.dart';
+import 'package:flutter_unit_mac/views/components/permanent/circle_text.dart';
+import 'package:flutter_unit_mac/views/components/permanent/feedback_widget.dart';
 import 'package:flutter_unit_mac/model/category_model.dart';
 
 /// create by 张风捷特烈 on 2020-04-21

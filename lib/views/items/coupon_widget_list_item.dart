@@ -5,9 +5,9 @@ import 'package:flutter_unit_mac/app/res/cons.dart';
 import 'package:flutter_unit_mac/app/res/style/shape/coupon_shape_border.dart';
 import 'package:flutter_unit_mac/blocs/collect/collect_bloc.dart';
 import 'package:flutter_unit_mac/blocs/collect/collect_state.dart';
-import 'package:flutter_unit_mac/components/permanent/circle_image.dart';
-import 'package:flutter_unit_mac/components/permanent/circle_text.dart';
-import 'package:flutter_unit_mac/components/permanent/tag.dart';
+import 'package:flutter_unit_mac/views/components/permanent/circle_image.dart';
+import 'package:flutter_unit_mac/views/components/permanent/circle_text.dart';
+import 'package:flutter_unit_mac/views/components/permanent/tag.dart';
 import 'package:flutter_unit_mac/model/widget_model.dart';
 
 class CouponWidgetListItem extends StatelessWidget {

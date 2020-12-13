@@ -42,6 +42,21 @@ class WidgetsMap {
           CustomCard(),
           ShapeCard(),
         ];
+      case "ElevatedButton":
+        return [
+          ElevatedButtonDemo(),
+          ElevatedButtonStyleDemo(),
+        ];
+      case "TextButton":
+        return [
+          TextButtonDemo(),
+          TextButtonStyleDemo(),
+        ];
+      case "OutlinedButton":
+        return [
+          OutlinedButtonDemo(),
+          OutlinedButtonStyleDemo(),
+        ];
       case "FlutterLogo":
         return [
           CustomFlutterLogo(),
@@ -83,6 +98,26 @@ class WidgetsMap {
         return [
           InputDecoratorDemo(),
         ];
+      case "ColoredBox":
+        return [
+          ColoredBoxDemo(),
+        ];
+      case "StatefulBuilder":
+        return [
+          StatefulBuilderDemo(),
+        ];
+      case "RawKeyboardListener":
+        return [
+          RawKeyboardListenerDemo(),
+        ];
+      case "RawGestureDetector":
+        return [
+          RawGestureDetectorDemo(),
+        ];
+      case "SafeArea":
+        return [
+          SafeAreaDemo(),
+        ];
       case "WidgetInspector":
         return [
           WidgetInspectorDemo(),
@@ -117,6 +152,10 @@ class WidgetsMap {
       case "WidgetsApp":
         return [
           WidgetsAppDemo(),
+        ];
+      case "TableCell":
+        return [
+          TableCellDemo(),
         ];
 
       case "EditableText":
@@ -219,6 +258,10 @@ class WidgetsMap {
       case "CircleAvatar":
         return [
           CustomCircleAvatar(),
+        ];
+      case "SliverLayoutBuilder":
+        return [
+          SliverLayoutBuilderDemo(),
         ];
       case "Visibility":
         return [
@@ -450,6 +493,51 @@ class WidgetsMap {
       case "ExpansionTile":
         return [
           CustomExpansionTile(),
+        ];
+
+      case "AnnotatedRegion":
+        return [
+          AnnotatedRegionDemo(),
+        ];
+      case "CheckedModeBanner":
+        return [
+          CheckedModeBannerDemo(),
+        ];
+      case "DefaultTabController":
+        return [
+          DefaultTabControllerDemo(),
+        ];
+      case "CupertinoTabView":
+        return [
+          CupertinoTabViewDemo(),
+        ];
+      case "CupertinoTextSelectionToolbar":
+        return [
+          CupertinoTextSelectionToolbarDemo(),
+        ];
+      case "DraggableScrollableActuator":
+        return [
+          DraggableScrollableActuatorDemo(),
+        ];
+      case "GlowingOverscrollIndicator":
+        return [
+          GlowingOverscrollIndicatorDemo(),
+        ];
+      case "DraggableScrollableSheet":
+        return [
+          DraggableScrollableSheetDemo(),
+        ];
+      case "DrawerController":
+        return [
+          DrawerControllerDemo(),
+        ];
+      case "MergeableMaterial":
+        return [
+          MergeableMaterialDemo(),
+        ];
+      case "SizeChangedLayoutNotifier":
+        return [
+          SizeChangedLayoutNotifierDemo(),
         ];
       case "SelectableText":
         return [

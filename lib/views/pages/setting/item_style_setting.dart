@@ -5,8 +5,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_unit_mac/blocs/global/global_bloc.dart';
 import 'package:flutter_unit_mac/blocs/global/global_event.dart';
 import 'package:flutter_unit_mac/blocs/global/global_state.dart';
-import 'package:flutter_unit_mac/components/permanent/feedback_widget.dart';
-import 'package:flutter_unit_mac/components/permanent/circle.dart';
+import 'package:flutter_unit_mac/views/components/permanent/feedback_widget.dart';
+import 'package:flutter_unit_mac/views/components/permanent/circle.dart';
 import 'package:flutter_unit_mac/views/items/home_item_support.dart';
 
 

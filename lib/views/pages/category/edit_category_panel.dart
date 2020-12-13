@@ -4,9 +4,9 @@ import 'package:flutter_unit_mac/app/res/style/unit_color.dart';
 import 'package:flutter_unit_mac/app/utils/color_utils.dart';
 import 'package:flutter_unit_mac/blocs/category/category_bloc.dart';
 import 'package:flutter_unit_mac/blocs/category/category_event.dart';
-import 'package:flutter_unit_mac/components/permanent/edit_panel.dart';
-import 'package:flutter_unit_mac/components/permanent/input_button.dart';
-import 'package:flutter_unit_mac/components/project/color_chooser.dart';
+import 'package:flutter_unit_mac/views/components/permanent/edit_panel.dart';
+import 'package:flutter_unit_mac/views/components/permanent/input_button.dart';
+import 'package:flutter_unit_mac/views/components/project/color_chooser.dart';
 import 'package:flutter_unit_mac/model/category_model.dart';
 
 /// create by 张风捷特烈 on 2020-04-23

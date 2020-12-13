@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_unit_mac/app/router.dart';
 import 'package:flutter_unit_mac/app/res/toly_icon.dart';
-import 'package:flutter_unit_mac/components/flutter/no_div_expansion_tile.dart';
+import 'package:flutter_unit_mac/views/components/flutter/no_div_expansion_tile.dart';
 import 'package:flutter_unit_mac/views/common/unit_drawer_header.dart';
 
 /// create by 张风捷特烈 on 2020-03-26

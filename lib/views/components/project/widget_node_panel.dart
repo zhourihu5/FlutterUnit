@@ -4,9 +4,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_unit_mac/app/res/toly_icon.dart';
 import 'package:flutter_unit_mac/app/utils/Toast.dart';
 
-import 'package:flutter_unit_mac/components/permanent/circle.dart';
-import 'package:flutter_unit_mac/components/permanent/code/code_widget.dart';
-import 'package:flutter_unit_mac/components/permanent/panel.dart';
+import 'package:flutter_unit_mac/views/components/permanent/circle.dart';
+import 'package:flutter_unit_mac/views/components/permanent/code/code_widget.dart';
+import 'package:flutter_unit_mac/views/components/permanent/panel.dart';
 import 'package:share/share.dart';
 import 'package:toggle_rotate/toggle_rotate.dart';
 

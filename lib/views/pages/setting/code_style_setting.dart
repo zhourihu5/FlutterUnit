@@ -4,10 +4,10 @@ import 'package:flutter_unit_mac/app/res/cons.dart';
 import 'package:flutter_unit_mac/blocs/global/global_bloc.dart';
 import 'package:flutter_unit_mac/blocs/global/global_event.dart';
 import 'package:flutter_unit_mac/blocs/global/global_state.dart';
-import 'package:flutter_unit_mac/components/permanent/code/code_widget.dart';
-import 'package:flutter_unit_mac/components/permanent/code/highlighter_style.dart';
-import 'package:flutter_unit_mac/components/permanent/feedback_widget.dart';
-import 'package:flutter_unit_mac/components/permanent/circle.dart';
+import 'package:flutter_unit_mac/views/components/permanent/code/code_widget.dart';
+import 'package:flutter_unit_mac/views/components/permanent/code/highlighter_style.dart';
+import 'package:flutter_unit_mac/views/components/permanent/feedback_widget.dart';
+import 'package:flutter_unit_mac/views/components/permanent/circle.dart';
 
 /// create by 张风捷特烈 on 2020-04-10
 /// contact me by email 1981462002@qq.com

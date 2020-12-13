@@ -8,7 +8,7 @@ import 'package:flutter_unit_mac/app/convert.dart';
 import 'package:flutter_unit_mac/app/res/cons.dart';
 import 'package:flutter_unit_mac/app/router.dart';
 import 'package:flutter_unit_mac/blocs/bloc_exp.dart';
-import 'package:flutter_unit_mac/components/permanent/feedback_widget.dart';
+import 'package:flutter_unit_mac/views/components/permanent/feedback_widget.dart';
 import 'package:flutter_unit_mac/model/widget_model.dart';
 import 'package:flutter_unit_mac/views/common/empty_page.dart';
 import 'package:flutter_unit_mac/views/items/home_item_support.dart';

@@ -8,9 +8,9 @@ import 'package:flutter_unit_mac/blocs/category_widget/category_widget_event.dar
 import 'package:flutter_unit_mac/blocs/category_widget/category_widget_state.dart';
 import 'package:flutter_unit_mac/blocs/detail/detail_bloc.dart';
 import 'package:flutter_unit_mac/blocs/detail/detail_event.dart';
-import 'package:flutter_unit_mac/components/permanent/circle_image.dart';
-import 'package:flutter_unit_mac/components/permanent/circle_text.dart';
-import 'package:flutter_unit_mac/components/permanent/feedback_widget.dart';
+import 'package:flutter_unit_mac/views/components/permanent/circle_image.dart';
+import 'package:flutter_unit_mac/views/components/permanent/circle_text.dart';
+import 'package:flutter_unit_mac/views/components/permanent/feedback_widget.dart';
 import 'package:flutter_unit_mac/model/category_model.dart';
 import 'package:flutter_unit_mac/model/widget_model.dart';
 import 'package:flutter_unit_mac/views/items/techno_widget_list_item.dart';

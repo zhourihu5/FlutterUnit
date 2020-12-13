@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_unit_mac/components/permanent/circle.dart';
+import 'package:flutter_unit_mac/views/components/permanent/circle.dart';
 import 'package:flutter_unit_mac/views/common/unit_drawer_header.dart';
 
 import 'edit_category_panel.dart';
