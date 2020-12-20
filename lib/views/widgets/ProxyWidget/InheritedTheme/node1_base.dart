@@ -36,24 +36,24 @@ class TestBody extends StatelessWidget {
             margin: EdgeInsets.only(left: 40,right: 40),
             alignment: Alignment.center,
             color: Theme.of(context).primaryColor.withOpacity(0.1),
-            child: Text('点我进入下页')));
+            child: Text('InheritedTheme')));
   }
 
   void _toNextPage(BuildContext context) {
-    final NavigatorState navigator = Navigator.of(context);
-    final CapturedThemes themes =
-    InheritedTheme.capture(from: context, to: navigator.context);
-
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (BuildContext _) {
-          return themes.wrap(Container(
-            alignment: Alignment.center,
-            color: Colors.white,
-            child: Text('Flutter Unit'),
-          ));
-        },
-      ),
-    );
+    // final NavigatorState navigator = Navigator.of(context);
+    // final CapturedThemes themes =
+    // InheritedTheme.capture(from: context, to: navigator.context);
+    //
+    // Navigator.of(context).push(
+    //   MaterialPageRoute(
+    //     builder: (BuildContext _) {
+    //       return themes.wrap(Container(
+    //         alignment: Alignment.center,
+    //         color: Colors.white,
+    //         child: Text('Flutter Unit'),
+    //       ));
+    //     },
+    //   ),
+    // );
   }
 }
