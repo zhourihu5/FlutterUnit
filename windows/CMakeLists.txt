@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(flutter_unit LANGUAGES CXX)
+project(flutter_db LANGUAGES CXX)
 
-set(BINARY_NAME "flutter_unit")
+set(BINARY_NAME "flutter_db")
 
 cmake_policy(SET CMP0063 NEW)
 

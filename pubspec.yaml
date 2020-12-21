@@ -27,11 +27,14 @@ dependencies:
   sqflite: ^1.2.1 #数据库
   toggle_rotate: ^0.0.5
   flutter_star: ^0.1.2 # 星星组件
-  shared_preferences: ^0.5.6+3 # xml 固化
+  shared_preferences: ^0.5.12+4 # xml 固化
+  sqflite_common_ffi:
   url_launcher: ^5.4.2 # url
   path_provider: ^1.6.11
   intl: ^0.16.1 # 格式化
   share: ^0.6.3+6
+  path_provider_fde:
+    path: ./plugins/path_provider_fde
 dev_dependencies:
   flutter_test:
     sdk: flutter
