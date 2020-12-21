@@ -94,13 +94,13 @@ class TechnoWidgetListItem extends StatelessWidget {
                 color: Colors.transparent,
                 child: CircleText(
                   text: data.name,
-                  size: 60,
+                  size: 50,
                   color: itemColor,
                 ),
               )
             : CircleImage(
                 image: data.image,
-                size: 55,
+                size: 50,
               ),
       );
 
