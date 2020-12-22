@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_unit_mac/app/res/keymap/search_key_map.dart';
 import 'package:flutter_unit_mac/app/router.dart';
 import 'package:flutter_unit_mac/blocs/bloc_exp.dart';
 import 'package:flutter_unit_mac/views/app/splash/unit_splash.dart';
@@ -18,31 +19,25 @@ class FlutterApp extends StatelessWidget {
         create: (_) => CategoryWidgetBloc(
             categoryBloc: BlocProvider.of<CategoryBloc>(context)),
         child: MaterialApp(
-            title: 'Flutter Unit',
-//            shortcuts: <LogicalKeySet, Intent>{
-//              ...WidgetsApp.defaultShortcuts,
-//              LogicalKeySet(LogicalKeyboardKey.keyA, LogicalKeyboardKey.keyS):
-//                  const SearchIntent(),
-//            },
-//            actions:  <Type, Action<Intent>>{
-//              ...WidgetsApp.defaultActions,
-//              SearchIntent: CallbackAction(
-//                onInvoke: (Intent intent) {
-//                  print('-----${intent.runtimeType}--------');
-//                  Navigator.of(ctx).pushNamed(UnitRouter.search);
-//                  return null;
-//                },
-//              ),
-//            },
-            debugShowCheckedModeBanner: false,
-            onGenerateRoute: UnitRouter.generateRoute,
-            theme: ThemeData(
-              visualDensity: VisualDensity.adaptivePlatformDensity,
-              primarySwatch: state.themeColor,
-              fontFamily: state.fontFamily,
-            ),
-            home: UnitSplash(),
-            ),
+          title: 'Flutter Unit',
+          shortcuts: <LogicalKeySet, Intent>{
+            ...WidgetsApp.defaultShortcuts,
+            LogicalKeySet(LogicalKeyboardKey.control, LogicalKeyboardKey.keyF):
+                const SearchIntent(),
+          },
+          actions: <Type, Action<Intent>>{
+            ...WidgetsApp.defaultActions,
+            SearchIntent: ActionUnit.searchAction,
+          },
+          debugShowCheckedModeBanner: false,
+          onGenerateRoute: UnitRouter.generateRoute,
+          theme: ThemeData(
+            visualDensity: VisualDensity.adaptivePlatformDensity,
+            primarySwatch: state.themeColor,
+            fontFamily: state.fontFamily,
+          ),
+          home: UnitSplash(),
+        ),
       );
     });
   }

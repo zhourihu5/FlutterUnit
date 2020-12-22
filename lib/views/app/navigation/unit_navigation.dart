@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_unit_mac/app/res/cons.dart';
+import 'package:flutter_unit_mac/app/res/keymap/search_key_map.dart';
 import 'package:flutter_unit_mac/app/router.dart';
 import 'package:flutter_unit_mac/app/res/toly_icon.dart';
 import 'package:flutter_unit_mac/blocs/bloc_exp.dart';
@@ -17,6 +18,8 @@ import 'package:flutter_unit_mac/views/pages/unit_todo/layout_unit_page.dart';
 import 'package:flutter_unit_mac/views/pages/unit_todo/paint_unit_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../flutter_app.dart';
+
 class UnitNavigation extends StatefulWidget {
   @override
   _UnitNavigationState createState() => _UnitNavigationState();
@@ -27,8 +30,12 @@ class _UnitNavigationState extends State<UnitNavigation> {
 
   @override
   void initState() {
-    _controller = PageController();
     super.initState();
+    _controller = PageController();
+
+    ActionUnit.searchAction.onSearch = () {
+      Navigator.of(context).pushNamed(UnitRouter.search);
+    };
   }
 
   @override
@@ -249,8 +256,9 @@ class _RightNavBarState extends State<RightNavBar> {
                   borderRadius: BorderRadius.only(
                       topRight: Radius.circular(20),
                       bottomRight: Radius.circular(20))),
-              width:
-                  active ? widget.itemSize.width*0.95 : widget.itemSize.width * 0.85,
+              width: active
+                  ? widget.itemSize.width * 0.95
+                  : widget.itemSize.width * 0.85,
               height: widget.itemSize.height,
               child: Wrap(
                 spacing: 10,
@@ -259,12 +267,12 @@ class _RightNavBarState extends State<RightNavBar> {
                   Icon(
                     widget.itemData[info[i]],
                     size: active ? 24 : 20,
-                    color: active ? Colors.white:Colors.white70,
+                    color: active ? Colors.white : Colors.white70,
                   ),
                   Text(
                     info[i],
                     style: TextStyle(
-                      color: active ? Colors.white:Colors.white70,
+                      color: active ? Colors.white : Colors.white70,
                     ),
                   ),
                 ],
