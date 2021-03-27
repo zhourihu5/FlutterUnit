@@ -2,14 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_star/flutter_star.dart';
-import 'package:flutter_unit_mac/app/res/cons.dart';
-import 'package:flutter_unit_mac/app/res/style/shape/techno_shape.dart';
-import 'package:flutter_unit_mac/blocs/collect/collect_bloc.dart';
-import 'package:flutter_unit_mac/blocs/collect/collect_state.dart';
-import 'package:flutter_unit_mac/views/components/permanent/circle_image.dart';
-import 'package:flutter_unit_mac/views/components/permanent/circle_text.dart';
-import 'package:flutter_unit_mac/views/components/permanent/tag.dart';
-import 'package:flutter_unit_mac/model/widget_model.dart';
+import 'package:flutter_unit/app/res/cons.dart';
+import 'package:flutter_unit/app/res/style/shape/techno_shape.dart';
+import 'package:flutter_unit/blocs/collect/collect_bloc.dart';
+import 'package:flutter_unit/blocs/collect/collect_state.dart';
+import 'package:flutter_unit/views/components/permanent/circle_image.dart';
+import 'package:flutter_unit/views/components/permanent/circle_text.dart';
+import 'package:flutter_unit/views/components/permanent/tag.dart';
+import 'package:flutter_unit/model/widget_model.dart';
 
 class TechnoWidgetListItem extends StatelessWidget {
   final WidgetModel data;

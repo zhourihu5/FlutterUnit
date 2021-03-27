@@ -3,9 +3,9 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_unit_mac/app/enums.dart';
-import 'package:flutter_unit_mac/app/res/cons.dart';
-import 'package:flutter_unit_mac/repositories/itf/widget_repository.dart';
+import 'package:flutter_unit/app/enums.dart';
+import 'package:flutter_unit/app/res/cons.dart';
+import 'package:flutter_unit/repositories/itf/widget_repository.dart';
 
 import 'home_event.dart';
 import 'home_state.dart';
@@ -17,11 +17,8 @@ import 'home_state.dart';
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
   final WidgetRepository repository;
 
-  HomeBloc({@required this.repository});
-
-  @override
-  HomeState get initialState => WidgetsLoading(
-      homeColor: Color(Cons.tabColors[0]));
+  HomeBloc({@required this.repository}) : super(WidgetsLoading(
+      homeColor: Color(Cons.tabColors[0])));
 
   @override
   Stream<HomeState> mapEventToState(HomeEvent event) async* {

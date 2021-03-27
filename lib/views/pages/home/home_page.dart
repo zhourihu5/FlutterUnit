@@ -4,15 +4,15 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_unit_mac/app/convert.dart';
-import 'package:flutter_unit_mac/app/res/cons.dart';
-import 'package:flutter_unit_mac/app/router.dart';
-import 'package:flutter_unit_mac/blocs/bloc_exp.dart';
-import 'package:flutter_unit_mac/views/components/permanent/feedback_widget.dart';
-import 'package:flutter_unit_mac/model/widget_model.dart';
-import 'package:flutter_unit_mac/views/common/empty_page.dart';
-import 'package:flutter_unit_mac/views/items/home_item_support.dart';
-import 'package:flutter_unit_mac/views/pages/home/toly_app_bar.dart';
+import 'package:flutter_unit/app/convert.dart';
+import 'package:flutter_unit/app/res/cons.dart';
+import 'package:flutter_unit/app/router.dart';
+import 'package:flutter_unit/blocs/bloc_exp.dart';
+import 'package:flutter_unit/views/components/permanent/feedback_widget.dart';
+import 'package:flutter_unit/model/widget_model.dart';
+import 'package:flutter_unit/views/common/empty_page.dart';
+import 'package:flutter_unit/views/items/home_item_support.dart';
+import 'package:flutter_unit/views/pages/home/toly_app_bar.dart';
 
 import 'background.dart';
 
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
     WidgetModel model,
   ) =>
       BlocBuilder<GlobalBloc, GlobalState>(
-        condition: (p, c) => (p.itemStyleIndex != c.itemStyleIndex),
+        buildWhen: (p, c) => (p.itemStyleIndex != c.itemStyleIndex),
         builder: (_, state) {
           return
             FeedbackWidget(

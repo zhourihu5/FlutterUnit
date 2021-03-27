@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_unit_mac/app/res/style/unit_color.dart';
-import 'package:flutter_unit_mac/app/utils/color_utils.dart';
-import 'package:flutter_unit_mac/repositories/itf/category_repository.dart';
-import 'package:flutter_unit_mac/storage/po/category_po.dart';
+import 'package:flutter_unit/app/res/style/unit_color.dart';
+import 'package:flutter_unit/app/utils/color_utils.dart';
+import 'package:flutter_unit/repositories/itf/category_repository.dart';
+import 'package:flutter_unit/storage/po/category_po.dart';
 
 import 'category_event.dart';
 import 'category_state.dart';
@@ -15,10 +15,8 @@ import 'category_state.dart';
 class CategoryBloc extends Bloc<CategoryEvent, CategoryState> {
   final CategoryRepository repository;
 
-  CategoryBloc({@required this.repository});
+  CategoryBloc({@required this.repository}) : super(CategoryEmptyState());
 
-  @override
-  CategoryState get initialState => CategoryEmptyState(); //初始状态
 
   @override
   Stream<CategoryState> mapEventToState(CategoryEvent event) async* {

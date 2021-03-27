@@ -3,9 +3,9 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_unit_mac/app/res/cons.dart';
-import 'package:flutter_unit_mac/app/res/sp.dart';
-import 'package:flutter_unit_mac/blocs/global/global_state.dart';
+import 'package:flutter_unit/app/res/cons.dart';
+import 'package:flutter_unit/app/res/sp.dart';
+import 'package:flutter_unit/blocs/global/global_state.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:path/path.dart' as path;

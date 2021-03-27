@@ -1,28 +1,25 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:flutter_unit_mac/repositories/itf/widget_repository.dart';
+import 'package:flutter_unit/repositories/itf/widget_repository.dart';
 
 import 'search_event.dart';
 import 'search_state.dart';
 import 'package:bloc/bloc.dart';
-import 'package:rxdart/rxdart.dart';
+import 'package:flutter_unit/app/utils/stream_ext/ext.dart';
 
 class SearchBloc extends Bloc<SearchEvent, SearchState> {
   final WidgetRepository repository;
 
-  SearchBloc({@required this.repository});
-  @override
-  SearchState get initialState => SearchStateNoSearch();//初始状态
+  SearchBloc({@required this.repository}) : super( SearchStateNoSearch());
 
 
   @override
-  Stream<SearchState> transformEvents(
-      Stream<SearchEvent> events,
-      Stream<SearchState> Function(SearchEvent event) next,) {
+  Stream<Transition<SearchEvent, SearchState>> transformEvents(
+      Stream<SearchEvent> events, TransitionFunction<SearchEvent, SearchState> transitionFn) {
     return super.transformEvents(events
-        .debounceTime(Duration(milliseconds: 500),),
-      next,
+        .debounceTime(const Duration(milliseconds: 500),),
+      transitionFn,
     );
   }
 

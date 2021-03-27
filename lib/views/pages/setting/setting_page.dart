@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_unit_mac/app/router.dart';
-import 'package:flutter_unit_mac/app/res/toly_icon.dart';
-import 'package:flutter_unit_mac/blocs/global/global_bloc.dart';
-import 'package:flutter_unit_mac/blocs/global/global_event.dart';
-import 'package:flutter_unit_mac/blocs/global/global_state.dart';
+import 'package:flutter_unit/app/router.dart';
+import 'package:flutter_unit/app/res/toly_icon.dart';
+import 'package:flutter_unit/blocs/global/global_bloc.dart';
+import 'package:flutter_unit/blocs/global/global_event.dart';
+import 'package:flutter_unit/blocs/global/global_state.dart';
 
 
 class SettingPage extends StatelessWidget {

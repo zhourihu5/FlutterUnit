@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_unit_mac/model/widget_model.dart';
-import 'package:flutter_unit_mac/repositories/itf/widget_repository.dart';
+import 'package:flutter_unit/model/widget_model.dart';
+import 'package:flutter_unit/repositories/itf/widget_repository.dart';
 
 import 'detail_event.dart';
 import 'detail_state.dart';
@@ -13,10 +13,8 @@ import 'detail_state.dart';
 class DetailBloc extends Bloc<DetailEvent, DetailState> {
   final WidgetRepository repository;
 
-  DetailBloc({@required this.repository});
+  DetailBloc({@required this.repository}) : super( DetailLoading());
 
-  @override
-  DetailState get initialState => DetailLoading();
 
   @override
   Stream<DetailState> mapEventToState(DetailEvent event) async* {

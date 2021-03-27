@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_unit_mac/storage/app_storage.dart';
-import 'package:flutter_unit_mac/app/res/cons.dart';
-import 'package:flutter_unit_mac/app/res/sp.dart';
+import 'package:flutter_unit/storage/app_storage.dart';
+import 'package:flutter_unit/app/res/cons.dart';
+import 'package:flutter_unit/app/res/sp.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'global_event.dart';
@@ -12,13 +12,11 @@ import 'global_state.dart';
 /// 说明: 全局信息的bloc
 
 class GlobalBloc extends Bloc<GlobalEvent, GlobalState> {
-  @override
-  GlobalState get initialState => GlobalState();
 
  final AppStorage storage ;
 
 
-  GlobalBloc(this.storage);
+  GlobalBloc(this.storage) : super(GlobalState());
 
   Future<SharedPreferences> get sp => storage.sp;
 

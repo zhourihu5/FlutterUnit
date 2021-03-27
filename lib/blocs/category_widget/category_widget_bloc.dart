@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_unit_mac/blocs/category/category_bloc.dart';
-import 'package:flutter_unit_mac/blocs/category/category_event.dart';
-import 'package:flutter_unit_mac/repositories/itf/category_repository.dart';
+import 'package:flutter_unit/blocs/category/category_bloc.dart';
+import 'package:flutter_unit/blocs/category/category_event.dart';
+import 'package:flutter_unit/repositories/itf/category_repository.dart';
 
 import 'category_widget_event.dart';
 import 'category_widget_state.dart';
@@ -15,12 +15,10 @@ class CategoryWidgetBloc
     extends Bloc<CategoryWidgetEvent, CategoryWidgetState> {
   final CategoryBloc categoryBloc;
 
-  CategoryWidgetBloc({@required this.categoryBloc});
+  CategoryWidgetBloc({@required this.categoryBloc}) : super(CategoryWidgetEmptyState());
 
   CategoryRepository get repository => categoryBloc.repository;
 
-  @override
-  CategoryWidgetState get initialState => CategoryWidgetEmptyState(); //初始状态
 
   @override
   Stream<CategoryWidgetState> mapEventToState(

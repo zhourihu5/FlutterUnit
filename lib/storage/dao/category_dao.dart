@@ -85,7 +85,9 @@ class CategoryDao {
         "WHERE name = ?";
     var rawData = await db.rawQuery(sql, [name]);
     if (rawData.length > 0) {
-      return rawData[0]['count'] > 0;
+      if(rawData[0]['count'] is int){
+        return ((rawData[0]['count']) as int) > 0;
+      }
     }
     return false;
   }
@@ -146,7 +148,9 @@ class CategoryDao {
         "WHERE categoryId = ? AND widgetId = ?";
     var rawData = await db.rawQuery(sql, [categoryId, widgetId]);
     if (rawData.length > 0) {
-      return rawData[0]['count'] > 0;
+      if(rawData[0]['count'] is int){
+        return ((rawData[0]['count']) as int) > 0;
+      }
     }
     return false;
   }
