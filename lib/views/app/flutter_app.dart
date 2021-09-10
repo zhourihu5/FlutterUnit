@@ -20,15 +20,15 @@ class FlutterApp extends StatelessWidget {
             categoryBloc: BlocProvider.of<CategoryBloc>(context)),
         child: MaterialApp(
           title: 'Flutter Unit',
-          shortcuts: <LogicalKeySet, Intent>{
-            ...WidgetsApp.defaultShortcuts,
-            LogicalKeySet(LogicalKeyboardKey.control, LogicalKeyboardKey.keyF):
-                const SearchIntent(),
-          },
-          actions: <Type, Action<Intent>>{
-            ...WidgetsApp.defaultActions,
-            SearchIntent: ActionUnit.searchAction,
-          },
+          // shortcuts: <LogicalKeySet, Intent>{
+          //   ...WidgetsApp.defaultShortcuts,
+          //   LogicalKeySet(LogicalKeyboardKey.control, LogicalKeyboardKey.keyF):
+          //       const SearchIntent(),
+          // },
+          // actions: <Type, Action<Intent>>{
+          //   ...WidgetsApp.defaultActions,
+          //   SearchIntent: ActionUnit.searchAction,
+          // },
           debugShowCheckedModeBanner: false,
           onGenerateRoute: UnitRouter.generateRoute,
           theme: ThemeData(
