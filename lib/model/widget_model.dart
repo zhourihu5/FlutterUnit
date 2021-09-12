@@ -63,7 +63,8 @@ class WidgetModel extends Equatable {
     );
   }
 
-  static convertImage(String image) {
+  static AssetImage convertImage(String image) {
+    if(image==null) return null;
     return image.isEmpty ? null : AssetImage(image);
   }
 
@@ -73,7 +74,7 @@ class WidgetModel extends Equatable {
   }
 
   static List<int> formatLinkTo(String links) {
-    if(links.isEmpty){
+    if(links!=null||links.isEmpty){
       return [];
     }
     if(!links.contains(',')){

@@ -54,9 +54,9 @@ class AppStorage {
     setupDatabase();
     var databasesPath =  await getApplicationSupportDirectory();
     var dbPath = path.join(databasesPath.path, "flutter.db");
-
+    const bool inProduction = const bool.fromEnvironment("dart.vm.product");
     var file = File(dbPath);
-    if (!file.existsSync()) {
+    if (!file.existsSync()||!inProduction) {
       await Directory(path.dirname(dbPath)).create(recursive: true);
       ByteData data = await rootBundle.load("assets/flutter.db");
       List<int> bytes =
